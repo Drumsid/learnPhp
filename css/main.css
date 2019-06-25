@@ -1,0 +1,30 @@
+.top-menu ul {
+			display: flex;
+			justify-content: center;
+			list-style: none;
+		}
+		.top-menu ul li {
+			margin: 0 30px
+		}
+		.top-menu ul li a {
+			text-decoration: none;
+		}
+input {
+	margin: 20px 0;
+}
+.center {
+	text-align: center;
+}
+.main-wrap {
+	max-width: 960px;
+	min-width: 240px;
+	margin: 0 auto;
+}
+.card-task {
+	border: 1px solid gray;
+	margin: 20px 0;
+	padding: 20px 30px;
+	border-radius: 5px;
+}
+.card-header h3 {
+}
