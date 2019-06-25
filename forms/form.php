@@ -1,4 +1,5 @@
 <?php 
+error_reporting(0);
 
 	require_once '../include/header2.php';
 	require_once '../include/functions.php';
@@ -8,7 +9,7 @@
  <h2 class = "center">Разные формы PHP</h2>
  <?php 
 
- debug($_GET);
+ //debug($_GET);
 
   ?>
 
@@ -27,6 +28,67 @@
 	<textarea name="textarea" id="textarea" cols="30" rows="10"></textarea><br>
 	<input type="submit" value="submit">
 </form>
+<hr>
+<?php 
+debug($_GET);
+
+
+
+	$point_x_1 = $_GET['point_x_1'];
+	$point_y_1 = $_GET['point_y_1'];
+	$point_z_1 = $_GET['point_z_1'];
+	$point_x_2 = $_GET['point_x_2'];
+	$point_y_2 = $_GET['point_y_2'];
+	$point_z_2 = $_GET['point_z_2'];
+
+	
+
+	function sumPoint ($a = 0, $b = 0, $c = 0, $x = 0, $y = 0, $z = 0) {
+		
+		$result = $a + $b + $c + $x + $y + $z;
+		return $result;
+	}
+$result = sumPoint($point_x_1, $point_y_1, $point_z_1, $point_x_2, $point_y_2, $point_z_2);
+
+
+
+ ?>
+<div class="form-point">
+	<h3>Расстояние между двумя точками в пространстве</h3>
+	<p>Задайте координаты двух точек в пространстве и нажмите отправить. Вы получите расстояние между этими точками.</p>
+	<form action="" method="get">
+		<h4>Введите координаты первой точки:</h4>
+		<div class="input-block">
+			<p>ось Х</p>
+			<input type="text" name="point_x_1"><br>
+		</div>
+		<div class="input-block">
+			<p>ось Y</p>
+			<input type="text" name="point_y_1"><br>
+		</div>
+		<div class="input-block">
+			<p>ось Z</p>
+			<input type="text" name="point_z_1"><br>
+		</div>
+		<h4>Введите координаты второй точки:</h4>
+		<div class="input-block">
+			<p>ось Х</p>
+			<input type="text" name="point_x_2"><br>
+		</div>
+		<div class="input-block">
+			<p>ось Y</p>
+			<input type="text" name="point_y_2"><br>
+		</div>
+		<div class="input-block">
+			<p>ось Z</p>
+			<input type="text" name="point_z_2"><br>
+		</div>
+		<div class="input-block">
+			<input type="submit" value="рассчитать">
+			<p>Результат: </p> <?php echo $result; ?>
+		</div>
+	</form>
+</div>
 </div>
 <?php 
 
@@ -34,22 +96,4 @@
 
  ?>
 
- <?php 
 
-//  function percent ($a, $b) {
-//  	$result = $a % $b;
-//  	return $result;
-//  }
-
-// highlight_string('<?php
-
-// 	 $result = $a % $b;
-// 	 return $result; 
-
-//  ?>');
-
-?>
-
-<!-- <script>
-	alert('hello');
-</script> -->

@@ -28,3 +28,18 @@ input {
 }
 .card-header h3 {
 }
+
+/*point form style*/
+.input-block {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.input-block p {
+	margin: 0 30px 0;
+}
+/*point form style*/
