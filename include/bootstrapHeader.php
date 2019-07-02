@@ -1,4 +1,7 @@
-<!doctype html>
+<?php 
+  require_once 'functions.php';
+ ?>
+ <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -7,6 +10,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
 
     <title>Hello, world!</title>
   </head>
@@ -33,7 +37,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="http://learnphp/phpOop/oop.php">Объекты</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="http://learnphp/phpOop/oopArray.php">Объекты в массиве</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -41,8 +45,8 @@
           Задачи связаные с функциями
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Математичиские</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="http://learnphp/func/mathFunction.php">Математичиские</a>
+          <a class="dropdown-item" href="http://learnphp/func/stringFunction.php">Строковые</a>
         </div>
       </li>
     </ul>
